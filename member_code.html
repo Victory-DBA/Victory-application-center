@@ -19,7 +19,7 @@
     <script>
         var app = angular.module('myApp', []);
         app.controller('codesCtrl', function ($scope, $http) {
-            $http.get("file:///C:/Users/Nathan/Dropbox/PCO/(Giving)/CDM+/member_code_dba.json").then(function (response) {
+            $http.get("member_code_dba.json").then(function (response) {
                 $scope.myrecords = response.data.records;
             });
         });
