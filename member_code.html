@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="codesCtrl">
+
+        <ul>
+            [First Name], [Last Name], [Member Code]
+            <li ng-repeat="x in myrecords">
+                {{ x.first_ame + ', ' + x.last_name + ', ' + x.member_code }}
+            </li>
+        </ul>
+
+    </div>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('codesCtrl', function ($scope, $http) {
+            $http.get("file:///C:/Users/Nathan/Dropbox/PCO/(Giving)/CDM+/member_code_dba.json").then(function (response) {
+                $scope.myrecords = response.data.records;
+            });
+        });
+    </script>
+
+</body>
+</html>
