@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms and Applications</title>
+    <style>
+        .page {
+            background-color: #F0F0F0;
+        }
+
+        .groups {
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 50px;
+            background-color: white;
+            background-width: 25%;
+            border-spacing: 50px;
+            box-shadow: 5px 5px 5px #888888;
+            align-content: center;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+        }
+
+            .groups:hover {
+                Border-color: darkgrey;
+                color: #2b2b2b;
+            }
+
+        .text {
+            color: #595959;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: "Futura";
+        }
+
+        .phone-email {
+            font-color: blue;
+            font-size: 16px;
+            text-decoration: none;
+            font-family: "Futura";
+        }
+
+        .infodivider {
+            font-color: grey;
+            font-size: 16px;
+            text-decoration: none;
+            font-family: "Futura";
+            margin: div;
+        }
+
+        .info {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            align-items: center;
+        }
+
+        .container {
+            padding: 0;
+            margin: 100px;
+            list-style: none;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            justify-content: space-around;
+            align-self: flex-end;
+        }
+
+        .help {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #4796ff;
+            border-radius: 5px;
+            background-color: #5792e0;
+            width: 90%;
+            height: 50px;
+            justify-content: center;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            vertical-align: middle;
+            color: white;
+            font-size: 20px;
+        }
+
+            .help:hover {
+                background-color: #6699ff;
+            }
+        formborder {
+            display: flex;
+            max-width: 750px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            background: white;
+            box-shadow: 5px 5px 5px #888888;
+            margin: 0 auto 1;
+            height: 250px;
+            border-radius: .5em;
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            padding: 20px;
+        }
+
+        .center {
+            margin: auto;
+            padding: 10px;
+        }
+
+        .block_title {
+            top: 50px;
+            left: 25%;
+            color: black;
+            text-align: left;
+            font-size:28px;
+            font-family: "Futura";
+        }
+
+        .block_text {
+            top: 80px;
+            left: 25%;
+            color: black;
+            text-align: left;
+            padding: 5px;
+            font-size:20px;
+            font-family: "futura";
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            margin: 0;
+            font-size: 18px;
+            position: absolute;
+            border-radius: .2em;
+            top: 5px;
+            right: 5px;
+            height: 39px;
+            background: #5792e0;
+            width: 170px;
+        }
+
+        h2:hover {
+                background: #6699ff;
+            }
+        .form {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #dddddd;
+            border-radius: 5px;
+            background-color: white;
+            width: 100px;
+            height: 100%;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            vertical-align: middle;
+            color: white;
+            font-size: 20px;
+        }
+        .h3 {
+            color: #595959;
+            text-align: center;
+            font-size: 30px;
+            text-decoration: none;
+            font-family: "Futura";
+            margin: 0;
+             }
+             .divider{
+                 margin: 0 0 20px 0;
+             }
+             .elementInfo{
+                border-style: solid;
+                border-width: 1px;
+                border-color: #dddddd;
+                border-radius: 5px;
+                background-color: white;
+                margin: -75px 0 0 0;
+                display: flex;
+                flex-direction: row;
+                flex-flow:row wrap;
+             }
+             .button{
+                 margin: 5px;
+                 padding: 10px;
+                 height: 100%;
+                 width:100%;
+                 text-align:center;
+                 vertical-align:middle;
+                 font-size:20px;
+                 font-family: "futura";
+                 color: white;
+                 border-width:1px;
+                 border-style: solid;
+                 border-radius: 2px;
+                 border-color: #4796ff;
+                 background-color:#5792e0;
+             }
+             .button:hover {
+                background-color: #6699ff;
+             }
+    </style>
+    <!--https://css-tricks.com/snippets/css/a-guide-to-flexbox/-->
+</head>
+<body class="page">
+    <div class="info">
+        <img src="http://www.victoryinternational.church/wp-content/uploads/2016/04/VIC_admin.png" style="width: 252px; float: none;" class="">
+        <div>
+            <span class="phone-email">(905)-549-0981</span>
+            <span class="infodivider"> | </span>
+            <span class="phone-email">info@victoryinternational.church</span>
+        </div>
+    </div>
+<hr class="divider">
+<h3 class="h3">Forms and Applications</h3>
+   <div class="container">
+       <section>
+           <table class="elementInfo">
+               <tr>
+                   <td>
+                   <button class="button" Onclick="window.location = 'http://www.victoryinternational.church/form-view/19'">Become a Victory Member</button>
+               </td>
+               <td class="center">
+                   <span class="block_title">Becoming a Member?</span><br>
+                   <span class="block_text">Every single person sitting in the pews is important to us but how is it important to you? Becoming a member is not for the benefit of the church, it is for you. Becoming a member is a personal dedication and covenant between you and your Father about you commitment to your local church. Apply and start reaping the profits.</span>
+                   </td>
+               </tr>   
+           </table>
+       </section>
+   </div>
+      <div class="container">
+       <section>
+           <table class="elementInfo">
+               <tr>
+                   <td>
+                   <button class="button" Onclick="window.location = 'http://www.victoryinternational.church/form-view/21'">Book a Wedding</button>
+               </td>
+               <td class="center">
+                   <span class="block_title">Need a Wedding Venue?</span><br>
+                   <span class="block_text">Interested in having your wedding here? Do you want one of our ordained ministers to perform your wedding? It's never made easier for our members to complete this process. All the questions are asked on the form, and our event manager and media director will contact you within a day or two.</span>
+                   </td>
+               </tr>   
+           </table>
+       </section>
+   </div>
+      </div>
+      <div class="container">
+       <section>
+           <table class="elementInfo">
+               <tr>
+                   <td>
+                   <button class="button" Onclick="window.location = 'http://www.victoryinternational.church/form-view/20'">Baby Dedication</button>
+               </td>
+               <td class="center">
+                   <span class="block_title">Did you recently have a baby?</span><br>
+                   <span class="block_text">Are you going to have a baby in the next few months? Apply now and get your childs foundation in Christ established. "Get them while they are young". You can have you dedication ceremony publicly during one of our Sunday Services or privately during the week. Go ahead and click that button below to start.</span>
+                   </td>
+               </tr>   
+           </table>
+       </section>
+   </div>
+    </div>
+      <div class="container">
+       <section>
+           <table class="elementInfo">
+               <tr>
+                   <td>
+                   <button class="button" Onclick="window.location = 'http://www.victoryinternational.church/form-view/22'">Tithe Number Request</button>
+               </td>
+               <td class="center">
+                   <span class="block_title">Forget your Tithe #?</span><br>
+                   <span class="block_text">Don't worry, we still know who you are! If you would like us to refresh your memory simply click the button bellow to get your number. Don't worry, we keep all your information secure and safe. just fill out the request and an admin will contact your back shortly.</span>
+                   </td>
+               </tr>   
+           </table>
+       </section>
+   </div>
+       <div class="container">
+        <button class="help">
+            <span>Get Help</span>
+        </button>
+    </div>
+</body>
+<script>
+    function MembershipApplicationPage() {
+        window.location = 'http://www.victoryinternational.church/form-view/19';
+    }

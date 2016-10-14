@@ -1,0 +1,17 @@
+curl -v -u 7662cd838e73765dbd464167f6aab2817aef2234a0d07e14641350b5a4fefb8b:bcbe6975ad55417a43379ae3d45c0105524ed7b2d354912ea79c376bafc53cc5 "https://api.planningcenteronline.com/people/v2/field_definitions/88730"
+
+<pre class="embedcurl">curl -v -u 7662cd838e73765dbd464167f6aab2817aef2234a0d07e14641350b5a4fefb8b:bcbe6975ad55417a43379ae3d45c0105524ed7b2d354912ea79c376bafc53cc5
+"https://api.planningcenteronline.com/people/v2/field_definitions/88730"</pre>
+
+<!-- You only need to reference this script once per page. -->
+<script src="https://www.embedcurl.com/embedcurl.min.js" async></script>
+
+Oath2
+https://api.planningcenteronline.com/oauth/authorize?client_id=7662cd838e73765dbd464167f6aab2817aef2234a0d07e14641350b5a4fefb8b&redirect_uri=https://www.victoryinternational.church/callback&response_type=code&scope=pre
+
+Step 1 - Locate DATA packet directory
+Custom Tab Field Data
+https://api.planningcenteronline.com/people/v2/people/[MemberID]/field_data
+Where [MemberID] is the (People) member ID number.
+
+Step 2 - Generate process to "Get" specific field datum
